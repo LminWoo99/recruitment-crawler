@@ -27,9 +27,8 @@ def update_lastNo_in_json(lastNo):
 # ✅ 잡코리아 공고 크롤링 함수
 def crawl_jobkorea():
     job_data = []
-
     # ✅ 기본 URL (백엔드 개발자, 웹 개발자, 시스템 엔지니어, 소프트웨어 개발자, 신입 포함)
-    BASE_URL = "https://www.jobkorea.co.kr/Search/?stext=%EB%B0%B1%EC%97%94%EB%93%9C%20%EA%B0%9C%EB%B0%9C%EC%9E%90&duty=1000229%2C1000231%2C1000239%2C1000233&careerType=1&tabType=recruit&Page_No={}"
+    BASE_URL = "https://www.jobkorea.co.kr/Search/?stext=%EB%B0%B1%EC%97%94%EB%93%9C&ord=RegDtDesc&duty=1000229%2C1000231%2C1000232%2C1000239%2C1000233&careerType=1&tabType=recruit&Page_No={}"
 
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
